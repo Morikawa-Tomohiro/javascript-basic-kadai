@@ -1,9 +1,11 @@
 "use strict";
 
-let today = new Date();
+const date = new Date();
 
-let year = today.getFullYear();
-let month = today.getMonth() ;
-let day = today.getDate() ;
+const [month, day, year] = [
+  date.getMonth() +1,
+  date.getDate(),
+  date.getFullYear(),
+];
 
 console.log( year + '年' + month + '月' + day + '日');
